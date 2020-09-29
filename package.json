@@ -1,20 +1,32 @@
 {
 	"name": "dotenv",
 	"version": "1.0.1",
-	"description": "",
+	"description": "util to load env values into an app/service",
+	"keywords": [],
+	"homepage": "https://github.com/anzerr/dotenv#readme",
+	"bugs": {
+		"url": "https://github.com/anzerr/dotenv/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git@github.com:anzerr/dotenv.git"
+	},
+	"license": "MIT",
+	"author": "anzerr",
 	"main": "index.js",
+	"types": "index.d.ts",
 	"scripts": {
 		"test": "node test",
 		"linter": "eslint index.js index.js",
 		"flinter": "eslint --fix index.js index.js"
 	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
+	"eslintConfig": {
+		"extends": "eslint-config-basic"
+	},
 	"devDependencies": {
 		"eslint-config-basic": "git+https://git@github.com/anzerr/eslintrc.git"
 	},
-	"eslintConfig": {
-		"extends": "eslint-config-basic"
+	"engines": {
+		"node": ">= 0.10.0"
 	}
 }
