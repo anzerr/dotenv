@@ -4,7 +4,9 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"test": "node test"
+		"test": "node test",
+		"linter": "eslint index.js index.js",
+		"flinter": "eslint --fix index.js index.js"
 	},
 	"keywords": [],
 	"author": "",

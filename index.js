@@ -65,6 +65,7 @@ class Dot {
 
 	get() {
 		try {
+			// eslint-disable-next-line no-sync
 			const parsed = this.parse(fs.readFileSync(this.config.path, {encoding: this.config.encoding}).toString());
 			for (const i in parsed) {
 				if (!process.env[i]) {
